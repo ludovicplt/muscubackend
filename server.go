@@ -11,9 +11,9 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"github.com/muscuApp/gqlbackend/config"
-	"github.com/muscuApp/gqlbackend/graph"
-	"github.com/muscuApp/gqlbackend/graph/model"
+	"github.com/ludovicplt/muscubackend/config"
+	"github.com/ludovicplt/muscubackend/graph"
+	"github.com/ludovicplt/muscubackend/graph/model"
 	"github.com/vektah/gqlparser/v2/ast"
 	"gorm.io/gorm"
 )

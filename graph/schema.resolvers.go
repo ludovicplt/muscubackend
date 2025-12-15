@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/muscuApp/gqlbackend/auth"
-	"github.com/muscuApp/gqlbackend/graph/model"
-	"github.com/muscuApp/gqlbackend/utils"
+	"github.com/ludovicplt/muscubackend/auth"
+	"github.com/ludovicplt/muscubackend/graph/model"
+	"github.com/ludovicplt/muscubackend/utils"
 )
 
 // CreateUser is the resolver for the CreateUser field.
