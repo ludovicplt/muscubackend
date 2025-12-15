@@ -1,0 +1,69 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+scalar Time
+
+type User {
+  ID: ID!
+  Name: String!
+  Email: String!
+  Password: String!
+  Age: Int!
+  CreatedAt: String!
+  UpdatedAt: String
+  DeletedAt: String
+  Deleted: Boolean
+}
+
+type ConnectionAccepted {
+  Token: String!
+}
+
+type TokenTable {
+  ID: ID!
+  token: String!
+}
+
+input CreateUserInput {
+  Name: String!
+  Password: String!
+  Age: Int!
+  Email: String!
+}
+
+input LoginUserInput {
+  Email: String!
+  Password: String!
+}
+
+type Mutation {
+  CreateUser(User: CreateUserInput!): ConnectionAccepted!
+  LoginUser(User: LoginUserInput!): ConnectionAccepted!
+}
+
+type Tags {
+  ID: String!
+  Name: String!
+}
+
+type Exercise {
+  ID: String!
+  Name: String!
+  CreatedAt: String!
+  UpdatedAt: String
+  Image: String
+  Tags: [Tags!]!
+}
+
+type Machine {
+  ID: String!
+  Name: String!
+  Image: String
+  CreatedAt: String
+  UpdatedAt: String
+}
+
+input CreateMachineInput {
+  Name: String!
+}
